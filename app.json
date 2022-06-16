@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "tricas",
-    "slug": "snack-bb16ce82-9642-4822-91b0-6047c3f26a29",
+    "slug": "snack-8e42e64f-953e-40b6-8a22-f2ca45db1ad7",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },

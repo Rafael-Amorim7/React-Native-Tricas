@@ -1,39 +1,30 @@
 import React from "react";
-import {
-  View,
-  Text,
-  Image,
-  ScrollView,
-  StyleSheet,
-  Dimensions,
-} from "react-native";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import { View, Text, Image, ScrollView, StyleSheet, Dimensions } from "react-native";
+import SearchBar from '../../components/SearchBar/SearchBar';
+import Constants from 'expo-constants'
 
-export default function LocationSearch() {
-  return (
-    <View style={stylesheet._DefaultBackground}>
-      <View style={stylesheet.searchBar}>
-        <SearchBar />
-      </View>
-    </View>
-  );
+
+export default function LocationSearch (){
+	return (
+		<View style = {stylesheet._DefaultBackground}>
+    <View style={stylesheet.searchBar}><SearchBar/></View>
+		</View>
+    
+	)
 }
 
 const stylesheet = StyleSheet.create({
-  _DefaultBackground: {
-    position: "relative",
-    backgroundColor: "rgba(239, 239, 239, 1)",
-    width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height,
+	_DefaultBackground: {
+    position: 'relative',
+    backgroundColor: 'rgba(239, 239, 239, 1)',
+    width: Dimensions.get('window').width,
     borderRadius: 14,
-    overflow: "hidden",
-    transform: [{ translateX: 0 }, { translateY: 0 }, { rotate: "0deg" }],
-    left: 0,
-    top: 0,
+    height: '100%' ,
+    marginTop: Constants.statusBarHeight 
   },
-  searchBar: {
-    width: Dimensions.get("window").width,
-    position: "absolute",
-    alignItems: "center",
-  },
+ searchBar: {
+     width: Dimensions.get('window').width,
+    position: 'absolute',
+    alignItems: 'center',
+  },  
 });
